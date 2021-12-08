@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/files-1-blue"></img>
 
 <br>
-A simple proxy scraper from a free API
+A simple proxy scraper from a free API that outputs the results to a text file
 <br>
 <br>
 Requires the requests library
