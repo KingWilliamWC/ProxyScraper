@@ -13,7 +13,7 @@
 __author__ = "William Wolseley-Charles"
 __copyright__ = "Copyright 2021, William Wolseley-Charles Propietary property"
 __credits__ = ["William Wolseley-Charles", "Symir Aliu"]
-__license__ = "GPL"
+__license__ = "The Unlicense"
 __version__ = "1.0.0"
 __maintainer__ = "William Wolseley-Charles"
 __email__ = "17WWolseley-charles@worcs.tgacademy.org.uk"
