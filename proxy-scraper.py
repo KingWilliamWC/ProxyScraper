@@ -72,7 +72,7 @@ def call_proxy(limit, serveType, port, output_file):
             for result in results:
                 text_file.write("\n{}".format(result))
     else:
-        print("Unable to find any proxies with the current paramters, please try again or change them")
+        print("Unable to find any proxies with the current parameters, please try again or change them")
 
 def parseArguments():
     parser = argparse.ArgumentParser(description="Scrapes proxies and outputs to a file", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
