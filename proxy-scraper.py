@@ -41,7 +41,6 @@ def call_proxy(limit, serveType, port, output_file):
     if(limit <= 20):
         base_url += '{}limit={}'.format(urlParamAdd,limit)
         urlParamAdd = "&"
-        print(base_url)
         request = requests.get(base_url)
         data = request.json()
         if(len(data) > 0):
@@ -65,6 +64,8 @@ def call_proxy(limit, serveType, port, output_file):
 
     
     if(len(results) > 0):
+        if(len(results) < limit):
+            print("Unable to fill limit, only got: {} proxies".format(len(results)))
         print("Saving to file: {}".format(output_file))
         with open(output_file, "w+") as text_file:
             text_file.write("{}".format(results[0]))
@@ -84,7 +85,7 @@ def parseArguments():
     args = parser.parse_args()
     call_proxy(args.limit, args.type, args.port, args.output)
 if __name__ == "__main__":
-    print(""""
+    print("""
   _____                                  _____                                      
  |  __ \                                / ____|                                     
  | |__) |_ __  ___ __  __ _   _  ______| (___    ___  _ __  __ _  _ __    ___  _ __ 
